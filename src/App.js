@@ -1,21 +1,35 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './css/app.css'
 
 class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
-    );
-  }
+	constructor(props) {
+	  super(props);
+
+	  this.state = {};
+	}
+
+	render() {
+		return (
+			<div id="appContainer">
+				<img
+					class="gifFrame"
+					src="https://media.giphy.com/media/6D5Vd6XuXsaNG/giphy.gif"
+					alt="Arnold Gif"
+				/>
+				<div className="getToTheChoppaa">
+					MEGA PIIYYMMPP DANIEL ARRNNOOLLD SCHWARTZENEGGGAA
+				</div>
+				<div className="getToTheChoppaa">
+					GET TO THE CHOPPAAA!
+				</div>
+				<img
+					class="gifFrame"
+					src="https://media.giphy.com/media/hwn4F7gOauL5u/giphy.gif"
+					alt="Arnold Gif"
+				/>
+			</div>
+		)
+	}
 }
 
 export default App;
